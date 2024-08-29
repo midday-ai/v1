@@ -22,6 +22,7 @@
     "./globals.css": "./src/globals.css",
     "./cn": "./src/utils/cn.ts",
     "./button": "./src/components/button.tsx",
+    "./icons": "./src/components/icons.tsx",
     "./tailwind.config": "./tailwind.config.ts"
   },
   "dependencies": {
