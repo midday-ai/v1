@@ -1,0 +1,21 @@
+{
+  "name": "@v1/kv",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.ts",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "typecheck": "tsc --noEmit"
+  },
+  "exports": {
+    "./client": "./src/index.ts",
+    "./ratelimit": "./src/ratelimit.ts"
+  },
+  "dependencies": {
+    "@upstash/ratelimit": "^2.0.2",
+    "@upstash/redis": "^1.34.0",
+    "server-only": "^0.0.1"
+  }
+}

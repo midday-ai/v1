@@ -1,0 +1,8 @@
+{
+  "name": "@midday/logger",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "pino": "^9.3.2"
+  }
+}
