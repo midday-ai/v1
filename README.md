@@ -1,4 +1,4 @@
-![hero](hero.png)
+![hero](image.png)
 
 ## Getting Started
 
