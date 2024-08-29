@@ -10,11 +10,11 @@ export const env = createEnv({
     PORT: z.coerce.number().default(3000),
   },
   server: {
+    // RESEND_API_KEY: z.string(),
+    // UPSTASH_REDIS_REST_TOKEN: z.string(),
+    // UPSTASH_REDIS_REST_URL: z.string(),
     OPENPANEL_SECRET_KEY: z.string(),
-    RESEND_API_KEY: z.string(),
     SUPABASE_SERVICE_KEY: z.string(),
-    UPSTASH_REDIS_REST_TOKEN: z.string(),
-    UPSTASH_REDIS_REST_URL: z.string(),
   },
   client: {
     NEXT_PUBLIC_OPENPANEL_CLIENT_ID: z.string(),
