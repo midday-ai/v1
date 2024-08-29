@@ -1,5 +1,6 @@
 {
-  "name": "@midday/logger",
+  "name": "@v1/logger",
+  "main": "./src/index.ts",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

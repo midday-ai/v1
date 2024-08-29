@@ -1,4 +1,5 @@
 import "@v1/ui/globals.css";
+import { Footer } from "@/components/footer";
 import { cn } from "@v1/ui/cn";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
@@ -37,6 +38,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

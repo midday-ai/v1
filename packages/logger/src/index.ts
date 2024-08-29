@@ -1,3 +1,1 @@
-const logger = require('pino')()
-
-export default logger;
+export const logger = require("pino")();

@@ -1,11 +1,10 @@
 import { GoogleSignin } from "@/components/google-signin";
 import { SignOut } from "@/components/sign-out";
-import { createClient } from "@v1/supabase/server";
+import { getUser } from "@v1/supabase/queries";
 import Image from "next/image";
 
 export default async function Page() {
-  const supabase = createClient();
-  const { data } = await supabase.auth.getUser();
+  const { data } = await getUser();
 
   const session = data?.user;
 
