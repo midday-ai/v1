@@ -75,29 +75,18 @@ export const authActionClient = actionClientWithMeta
     });
   })
   .use(async ({ next, metadata }) => {
-    const user = await getUser();
+    const { data } = await getUser();
     const supabase = createClient();
 
-    if (!user?.data) {
+    if (!data.user) {
       throw new Error("Unauthorized");
     }
-
-    // if (metadata) {
-    //   const analytics = await setupAnalytics({
-    //     userId: user.data.id,
-    //     fullName: user.data.full_name,
-    //   });
-
-    //   if (metadata.track) {
-    //     analytics.track(metadata.track);
-    //   }
-    // }
 
     return Sentry.withServerActionInstrumentation(metadata.name, async () => {
       return next({
         ctx: {
           supabase,
-          user: user.data,
+          user: data.user,
         },
       });
     });

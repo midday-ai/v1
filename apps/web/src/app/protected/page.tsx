@@ -1,4 +1,7 @@
+import { UsersLoading } from "@/components/users.loading";
+import { UsersServer } from "@/components/users.server";
 import type { Metadata } from "next";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Protected",
@@ -8,7 +11,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <div className="flex h-screen w-screen items-center justify-center">
-      <div className="text-2xl font-bold">Protected</div>
+      <Suspense fallback={<UsersLoading />}>
+        <UsersServer />
+      </Suspense>
     </div>
   );
 }
