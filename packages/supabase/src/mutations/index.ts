@@ -1,7 +1,7 @@
 import { logger } from "@v1/logger";
 import { createClient } from "@v1/supabase/server";
 
-export async function updateUser(userId: string, data: Partial<User>) {
+export async function updateUser(userId: string, data) {
   const supabase = createClient();
 
   try {
