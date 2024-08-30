@@ -27,7 +27,7 @@ export default function RootLayout({
       <body
         className={cn(
           `${DepartureMono.variable} ${GeistSans.variable} ${GeistMono.variable}`,
-          "antialiased",
+          "antialiased dark",
         )}
       >
         <Header />
