@@ -3,12 +3,13 @@ import Image from "next/image";
 export function Header() {
   return (
     <header className="absolute top-0 w-full flex items-center justify-between p-4 z-10">
-      <span className="hidden md:block">v1.run</span>
+      <span className="hidden md:block text-sm font-medium">v1.run</span>
 
       <Image
         src="/logo.png"
         alt="V1 logo"
         width={60}
+        quality={100}
         height={60}
         className="md:absolute md:left-1/2 md:top-5 md:-translate-x-1/2"
       />

@@ -7,11 +7,11 @@ export default function Page() {
       <div className="absolute -top-[118px] inset-0 bg-[linear-gradient(to_right,#222_1px,transparent_1px),linear-gradient(to_bottom,#222_1px,transparent_1px)] bg-[size:4.5rem_2rem] -z-10 [transform:perspective(1000px)_rotateX(-63deg)] h-[80%] pointer-events-none" />
       <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent pointer-events-none -z-10" />
 
-      <h1 className="font-departure text-[40px] md:text-[84px] relative z-10 text-center h-[120px] md:h-auto">
+      <h1 className="font-departure text-[40px] md:text-[84px] relative z-10 text-center h-[120px] md:h-auto leading-tight">
         <AnimatedText text="Production ready code" />
       </h1>
 
-      <p className="relative z-10 text-center leading-relaxed max-w-[80%] mt-4 md:mt-0">
+      <p className="relative z-10 text-center max-w-[80%] mt-4 md:mt-8">
         Kickstart your next SaaS with battle-tested code from{" "}
         <a href="https://midday.ai?utm_source=v1" className="underline">
           Midday
