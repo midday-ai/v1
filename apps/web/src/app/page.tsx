@@ -11,7 +11,7 @@ export default function Page() {
         <AnimatedText text="Production ready code" />
       </h1>
 
-      <p className="relative z-10 text-center text-[#878787] leading-relaxed max-w-[80%] mt-2 md:mt-0">
+      <p className="relative z-10 text-center leading-relaxed max-w-[80%] mt-4 md:mt-0">
         Kickstart your next SaaS with battle-tested code from{" "}
         <a href="https://midday.ai?utm_source=v1" className="underline">
           Midday
@@ -23,7 +23,7 @@ export default function Page() {
         Security verified by Kenshū.
       </span>
 
-      <div className="mt-8">
+      <div className="mt-10">
         <CopyText value="npx @midday/v1@latest create" />
       </div>
 
