@@ -14,7 +14,7 @@ export async function middleware(request: NextRequest) {
     I18nMiddleware(request),
   );
 
-  if (!request.nextUrl.pathname.endsWith("/login") && !true) {
+  if (!request.nextUrl.pathname.endsWith("/login") && !user) {
     return NextResponse.redirect(new URL("/login", request.url));
   }
 
