@@ -14,8 +14,8 @@ const DepartureMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "v1",
-  description: "Production ready Next.js app",
+  title: "Create v1",
+  description: "Everything you need to build a production ready SaaS",
 };
 
 export const viewport = {
