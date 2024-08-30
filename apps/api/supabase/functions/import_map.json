@@ -1,0 +1,9 @@
+{
+  "imports": {
+    "react-email/components": "./node_modules/npm:@react-email/components@0.0.22",
+    "react": "./node_modules/npm:react@18.3.1",
+    "resend": "./node_modules/npm:resend@4.0.0",
+    "standardwebhooks": "./node_modules/npm:standardwebhooks@1.0.0",
+    "@v1/ui/*": "./../../../../../packages/ui/src/*"
+  }
+}

@@ -1,13 +1,10 @@
 import { createServerClient } from "@supabase/ssr";
-import { type NextRequest, NextResponse } from "next/server";
+import type { NextRequest, NextResponse } from "next/server";
 
-export const updateSession = async (request: NextRequest) => {
-  let response = NextResponse.next({
-    request: {
-      headers: request.headers,
-    },
-  });
-
+export const updateSession = async (
+  request: NextRequest,
+  response: NextResponse,
+) => {
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
@@ -20,9 +17,7 @@ export const updateSession = async (request: NextRequest) => {
           for (const { name, value } of cookiesToSet) {
             request.cookies.set(name, value);
           }
-          response = NextResponse.next({
-            request,
-          });
+
           for (const { name, value, options } of cookiesToSet) {
             response.cookies.set(name, value, options);
           }
@@ -31,16 +26,10 @@ export const updateSession = async (request: NextRequest) => {
     },
   );
 
-  const user = await supabase.auth.getUser();
+  // This is to ensure the session is updated
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
 
-  // protected routes
-  if (request.nextUrl.pathname.startsWith("/protected") && user.error) {
-    return NextResponse.redirect(new URL("/", request.url));
-  }
-
-  if (request.nextUrl.pathname === "/" && !user.error) {
-    return NextResponse.redirect(new URL("/protected", request.url));
-  }
-
-  return response;
+  return { response, user };
 };

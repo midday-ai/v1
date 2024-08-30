@@ -1,8 +1,8 @@
-import { renderAsync } from "npm:@react-email/components@0.0.22";
-import React from "npm:react@18.3.1";
-import { Resend } from "npm:resend@4.0.0";
-import { Webhook } from "https://esm.sh/standardwebhooks@1.0.0";
-import { WelcomeEmail } from "../../../ui/emails/welcome-email.tsx";
+import { WelcomeEmail } from "@v1/ui/emails/welcome";
+import React from "react";
+import { renderAsync } from "react-email/components";
+import { Resend } from "resend";
+import { Webhook } from "standardwebhooks";
 
 const resend = new Resend(Deno.env.get("RESEND_API_KEY") as string);
 const hookSecret = Deno.env.get("SEND_EMAIL_HOOK_SECRET") as string;
@@ -45,9 +45,9 @@ Deno.serve(async (req) => {
     );
 
     const { error } = await resend.emails.send({
-      from: "welcome <onboarding@resend.dev>",
+      from: "Create v1 <onboarding@resend.dev>",
       to: [user.email],
-      subject: "Welcome to V1",
+      subject: "Welcome to v1",
       html,
     });
     if (error) {
@@ -55,6 +55,7 @@ Deno.serve(async (req) => {
     }
   } catch (error) {
     console.log(error);
+
     return new Response(
       JSON.stringify({
         error: {
