@@ -2,17 +2,18 @@ import Image from "next/image";
 
 export function Header() {
   return (
-    <header className="absolute top-0 w-full flex items-center justify-between p-6 z-10">
-      <span>v1.run</span>
+    <header className="absolute top-0 w-full flex items-center justify-between p-4 z-10">
+      <span className="hidden md:block">v1.run</span>
+
       <Image
         src="/logo.png"
         alt="V1 logo"
         width={60}
         height={60}
-        className="absolute left-1/2 top-5 -translate-x-1/2"
+        className="md:absolute md:left-1/2 md:top-5 md:-translate-x-1/2"
       />
 
-      <nav className="mt-2">
+      <nav className="md:mt-2">
         <ul className="flex gap-4">
           <li>
             <a
