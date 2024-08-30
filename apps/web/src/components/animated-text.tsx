@@ -1,6 +1,5 @@
 "use client";
 
-import { motion, useAnimation } from "framer-motion";
 import React, { useEffect, useState, useCallback } from "react";
 
 const lettersAndSymbols = "abcdefghijklmnopqrstuvwxyz!@#$%^&*-_+=;:<>,";
@@ -10,16 +9,7 @@ interface AnimatedTextProps {
 }
 
 export function AnimatedText({ text }: AnimatedTextProps) {
-  const controls = useAnimation();
   const [animatedText, setAnimatedText] = useState("");
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { duration: 0.5 },
-    },
-  };
 
   const getRandomChar = useCallback(
     () =>
@@ -28,9 +18,9 @@ export function AnimatedText({ text }: AnimatedTextProps) {
   );
 
   const animateText = useCallback(async () => {
-    const duration = 50; // Increased duration for slower character changes
-    const revealDuration = 80; // Increased reveal duration for slower reveal
-    const initialRandomDuration = 300; // Reduced total duration
+    const duration = 50;
+    const revealDuration = 80;
+    const initialRandomDuration = 300;
 
     const generateRandomText = () =>
       text
@@ -61,18 +51,8 @@ export function AnimatedText({ text }: AnimatedTextProps) {
   }, [text, getRandomChar]);
 
   useEffect(() => {
-    controls.start("visible");
     animateText();
-  }, [controls, text, animateText]);
+  }, [text, animateText]);
 
-  return (
-    <motion.div
-      variants={containerVariants}
-      initial="hidden"
-      animate={controls}
-      className="relative inline-block"
-    >
-      {animatedText}
-    </motion.div>
-  );
+  return <div className="relative inline-block">{animatedText}</div>;
 }
