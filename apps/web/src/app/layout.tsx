@@ -5,7 +5,6 @@ import { cn } from "@v1/ui/cn";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
-import { ThemeProvider } from "next-themes";
 import localFont from "next/font/local";
 
 const DepartureMono = localFont({
@@ -16,13 +15,6 @@ const DepartureMono = localFont({
 export const metadata: Metadata = {
   title: "Create v1",
   description: "Everything you need to build a production ready SaaS",
-};
-
-export const viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)" },
-    { media: "(prefers-color-scheme: dark)" },
-  ],
 };
 
 export default function RootLayout({
@@ -38,16 +30,9 @@ export default function RootLayout({
           "antialiased",
         )}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Header />
-          {children}
-          <Footer />
-        </ThemeProvider>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );
