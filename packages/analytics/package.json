@@ -1,0 +1,23 @@
+{
+  "name": "@v1/analytics",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "lint": "biome check .",
+    "format": "biome --write .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@v1/logger": "workspace:*",
+    "@vercel/functions": "^1.4.1",
+    "@openpanel/nextjs": "^1.0.0"
+  },
+  "exports": {
+    "./server": "./src/server.ts",
+    "./client": "./src/client.tsx",
+    "./events": "./src/events.ts"
+  }
+}
