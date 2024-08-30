@@ -22,11 +22,14 @@
     "./globals.css": "./src/globals.css",
     "./cn": "./src/utils/cn.ts",
     "./button": "./src/components/button.tsx",
+    "./input": "./src/components/input.tsx",
+    "./dialog": "./src/components/dialog.tsx",
     "./icons": "./src/components/icons.tsx",
     "./tailwind.config": "./tailwind.config.ts",
     "./postcss": "./postcss.config.js"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "lucide-react": "^0.436.0",
