@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Header() {
   return (
-    <header className="absolute top-0 w-full flex items-center justify-between p-6">
+    <header className="absolute top-0 w-full flex items-center justify-between p-6 z-10">
       <span>v1.run</span>
       <Image
         src="/logo.png"
@@ -16,7 +16,7 @@ export function Header() {
         <ul className="flex gap-4">
           <li>
             <a
-              href="/"
+              href="https://github.com/midday-ai/v1"
               className="text-sm px-4 py-2 bg-primary text-secondary rounded-full font-medium"
             >
               Github
