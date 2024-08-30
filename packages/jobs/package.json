@@ -1,6 +1,5 @@
 {
-  "name": "@v1/logger",
-  "main": "./src/index.ts",
+  "name": "@v1/jobs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,6 +9,6 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "pino": "^9.3.2"
+    "@trigger.dev/sdk": "3.0.0-beta.55"
   }
 }
