@@ -1,5 +1,7 @@
-import { LogOut } from "lucide-react";
+import { Check, Copy, LogOut } from "lucide-react";
 
 export const Icons = {
   SignOut: LogOut,
+  Copy,
+  Check,
 };
