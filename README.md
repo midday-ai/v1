@@ -55,6 +55,9 @@ Everything you need to build a production ready SaaS, it's a opinionated stack b
 │    └── ui                      # Shared UI components (Shadcn)
 ├── tooling                      # are the shared configuration that are used by the apps and packages
 │    └── typescript              # Shared TypeScript configuration
+├── .cursorrules                 # Cursor rules specific to this project
+├── biome.json                   # Biome configuration
+├── turbo.json                   # Turbo configuration
 ├── LICENSE
 └── README.md
 ```
@@ -73,7 +76,25 @@ OpenPanel<br>
 
 ## Getting Started
 
-First, run the development server:
+Clone this repo locally with the following command:
+
+```bash
+git clone https://github.com/midday-ai/v1
+```
+
+1. Install dependencies using bun:
+
+```sh
+bun i
+```
+
+2. Copy `.env.example` to `.env` and update the variables.
+
+```sh
+cp .env.example .env
+```
+
+4. Start the development server from either bun or turbo:
 
 ```ts
 bun dev // starts everything in development mode (web, app, api, email)
