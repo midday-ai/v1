@@ -1,21 +1,7 @@
 import { AnimatedText } from "@/components/animated-text";
 import { CopyText } from "@/components/copy-text";
-import { Button } from "@v1/ui/button";
-import { getCalApi } from "@calcom/embed-react";
-import { useEffect } from "react";
 
 export default function Page() {
-  useEffect(() => {
-    (async function () {
-      const cal = await getCalApi({ namespace: "15min" });
-      cal("ui", {
-        styles: { branding: { brandColor: "#000000" } },
-        hideEventTypeDetails: false,
-        layout: "month_view",
-      });
-    })();
-  }, []);
-
   return (
     <div className="h-screen w-screen flex flex-col items-center justify-center relative overflow-hidden">
       <div className="absolute -top-[118px] inset-0 bg-[linear-gradient(to_right,#222_1px,transparent_1px),linear-gradient(to_bottom,#222_1px,transparent_1px)] bg-[size:4.5rem_2rem] -z-10 [transform:perspective(1000px)_rotateX(-63deg)] h-[80%] pointer-events-none" />
@@ -65,14 +51,6 @@ export default function Page() {
           <span className="text-sm">Live on Hacker News</span>
         </div>
       </a>
-
-      <Button
-        data-cal-namespace="15min"
-        data-cal-link="pontus-midday/15min"
-        data-cal-config='{"layout":"month_view"}'
-      >
-        Talk to us
-      </Button>
 
       <div className="absolute -bottom-[280px] inset-0 bg-[linear-gradient(to_right,#222_1px,transparent_1px),linear-gradient(to_bottom,#222_1px,transparent_1px)] bg-[size:4.5rem_2rem] -z-10 [transform:perspective(560px)_rotateX(63deg)] pointer-events-none" />
       <div className="absolute w-full bottom-[100px] h-1/2  bg-gradient-to-b from-background to-transparent pointer-events-none -z-10" />

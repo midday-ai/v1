@@ -9,6 +9,7 @@ import {
   DialogTrigger,
 } from "@v1/ui/dialog";
 import Image from "next/image";
+import Link from "next/link";
 import { SubscribeForm } from "./subscribe-form";
 
 export function Header() {
@@ -16,14 +17,16 @@ export function Header() {
     <header className="absolute top-0 w-full flex items-center justify-between p-4 z-10">
       <span className="hidden md:block text-sm font-medium">v1.run</span>
 
-      <Image
-        src="/logo.png"
-        alt="V1 logo"
-        width={60}
-        quality={100}
-        height={60}
-        className="md:absolute md:left-1/2 md:top-5 md:-translate-x-1/2"
-      />
+      <Link href="/">
+        <Image
+          src="/logo.png"
+          alt="V1 logo"
+          width={60}
+          quality={100}
+          height={60}
+          className="md:absolute md:left-1/2 md:top-5 md:-translate-x-1/2"
+        />
+      </Link>
 
       <nav className="md:mt-2">
         <ul className="flex gap-4">
