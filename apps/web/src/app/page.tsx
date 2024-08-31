@@ -38,7 +38,7 @@ export default function Page() {
         <Tooltip>
           <TooltipTrigger asChild>
             <a
-              href="https://news.ycombinator.com/shownew"
+              href="https://news.ycombinator.com/show"
               target="_blank"
               rel="noreferrer"
             >
