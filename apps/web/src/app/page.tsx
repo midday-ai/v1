@@ -12,7 +12,7 @@ export default function Page() {
       </h1>
 
       <p className="relative z-10 text-center max-w-[80%] mt-0 md:mt-4">
-        Kickstart your next SaaS with battle-tested code from{" "}
+        An open-source starter kit based on{" "}
         <a href="https://midday.ai?utm_source=v1" className="underline">
           Midday
         </a>
