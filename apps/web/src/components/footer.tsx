@@ -4,7 +4,7 @@ export function Footer() {
       <span className="text-[#878787]">Featuring</span>
 
       <div className="relative flex overflow-x-hidden space-x-6">
-        <div className="flex items-center space-x-6 animate-marquee whitespace-nowrap md:animate-none">
+        <div className="flex items-center space-x-6 animate-marquee whitespace-nowrap lg:animate-none">
           <a
             href="https://vercel.com?utm_source=v1"
             target="_blank"
@@ -376,7 +376,7 @@ export function Footer() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_285_39)">
+              <g clipPath="url(#clip0_285_39)">
                 <path
                   d="M76.5896 0.97634C74.4049 0.901101 72.2203 1.57908 70.4121 3.01044L71.6174 3.68842C73.0489 2.63375 74.8568 2.18165 76.5896 2.25706V0.97634Z"
                   fill="white"
@@ -479,7 +479,7 @@ export function Footer() {
           </a>
         </div>
 
-        <div className="flex items-center space-x-6 animate-marquee2 whitespace-nowrap absolute top-0 md:hidden">
+        <div className="flex items-center space-x-6 animate-marquee2 whitespace-nowrap absolute top-0 lg:hidden">
           <a
             href="https://vercel.com?utm_source=v1"
             target="_blank"
@@ -851,7 +851,7 @@ export function Footer() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_285_39)">
+              <g clipPath="url(#clip0_285_39)">
                 <path
                   d="M76.5896 0.97634C74.4049 0.901101 72.2203 1.57908 70.4121 3.01044L71.6174 3.68842C73.0489 2.63375 74.8568 2.18165 76.5896 2.25706V0.97634Z"
                   fill="white"
