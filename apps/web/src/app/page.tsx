@@ -28,7 +28,11 @@ export default function Page() {
         <CopyText value="bunx degit midday-ai/v1 v1" />
       </div>
 
-      <a href="https://dub.sh/v1-hn" target="_blank" rel="noreferrer">
+      <a
+        href="https://news.ycombinator.com/shownew"
+        target="_blank"
+        rel="noreferrer"
+      >
         <div className="flex items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
