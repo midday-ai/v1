@@ -19,9 +19,10 @@ export default function Page() {
         .
       </p>
 
-      <span className="relative z-10 text-center text-[#878787] text-xs mt-2">
+      {/* In process */}
+      {/* <span className="relative z-10 text-center text-[#878787] text-xs mt-2">
         Security verified by Kenshū.
-      </span>
+      </span> */}
 
       <div className="mt-10">
         <CopyText value="git clone git@github.com:midday-ai/v1.git" />
