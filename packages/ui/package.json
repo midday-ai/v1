@@ -23,6 +23,7 @@
     "./cn": "./src/utils/cn.ts",
     "./button": "./src/components/button.tsx",
     "./input": "./src/components/input.tsx",
+    "./tooltip": "./src/components/tooltip.tsx",
     "./dialog": "./src/components/dialog.tsx",
     "./icons": "./src/components/icons.tsx",
     "./tailwind.config": "./tailwind.config.ts",
@@ -31,6 +32,7 @@
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-tooltip": "^1.1.2",
     "class-variance-authority": "^0.7.0",
     "lucide-react": "^0.436.0",
     "tailwind-merge": "^2.5.2",
