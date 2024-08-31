@@ -83,7 +83,7 @@ OpenPanel<br>
 Clone this repo locally with the following command:
 
 ```bash
-git clone https://github.com/midday-ai/v1
+bunx degit midday-ai/v1
 ```
 
 1. Install dependencies using bun:

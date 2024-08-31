@@ -25,7 +25,7 @@ export default function Page() {
       </span> */}
 
       <div className="mt-10 mb-8">
-        <CopyText value="git clone git@github.com:midday-ai/v1.git" />
+        <CopyText value="bunx degit midday-ai/v1" />
       </div>
 
       <a href="https://dub.sh/v1-hn" target="_blank" rel="noreferrer">
