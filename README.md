@@ -7,9 +7,12 @@
     An open-source starter kit based on <a href="https://midday.ai">Midday</a>.
     <br />
     <br />
-    <a href="https://v1.run">Website</a>
-    ·
-    <a href="https://github.com/midday-ai/v1/issues">Issues</a>
+    <a href="https://v1.run"><strong>Website</strong></a> · 
+    <a href="https://github.com/midday-ai/v1/issues"><strong>Issues</strong></a> · 
+    <a href="#whats-included"><strong>What's included</strong></a> ·
+    <a href="#prerequisites"><strong>Prerequisites</strong></a> ·
+    <a href="#getting-started"><strong>Getting Started</strong></a> ·
+    <a href="#how-to-use"><strong>How to use</strong></a>
   </p>
 </p>
 
@@ -17,24 +20,24 @@ Everything you need to build a production ready SaaS, it's a opinionated stack b
 
 ## What's included
 
-**Next.js** - Framework<br>
-**Turborepo** - Build system<br>
-**Biome** - Linter, formatter<br>
-**TailwindCSS** - Styling<br>
-**Shadcn** - UI components<br>
-**TypeScript** - Type safety<br>
-**Supabase** - Authentication, database, storage<br>
-**Upstash** - Cache and rate limiting<br>
-**React Email** - Email templates<br>
-**Resend** - Email delivery<br>
-**i18n** - Internationalization<br>
-**Sentry** - Error handling/monitoring<br>
-**Dub** - Sharable links<br>
-**Trigger.dev** - Background jobs<br>
-**OpenPanel** - Analytics<br>
-**react-safe-action** - Validated Server Actions<br>
-**nuqs** - Type-safe search params state manager<br>
-**next-themes** - Theme manager<br>
+[Next.js](https://nextjs.org/) - Framework<br>
+[Turborepo](https://turbo.build) - Build system<br>
+[Biome](https://biome.sh/) - Linter, formatter<br>
+[TailwindCSS](https://tailwindcss.com/) - Styling<br>
+[Shadcn](https://ui.shadcn.com/) - UI components<br>
+[TypeScript](https://www.typescriptlang.org/) - Type safety<br>
+[Supabase](https://supabase.com/) - Authentication, database, storage<br>
+[Upstash](https://upstash.com/) - Cache and rate limiting<br>
+[React Email](https://react.email/) - Email templates<br>
+[Resend](https://resend.com/) - Email delivery<br>
+[i18n](https://next-international.vercel.app/) - Internationalization<br>
+[Sentry](https://sentry.io/) - Error handling/monitoring<br>
+[Dub](https://dub.sh/) - Sharable links<br>
+[Trigger.dev](https://trigger.dev/) - Background jobs<br>
+[OpenPanel](https://openpanel.dev/) - Analytics<br>
+[react-safe-action](https://next-safe-action.dev) - Validated Server Actions<br>
+[nuqs](https://nuqs.47ng.com/) - Type-safe search params state manager<br>
+[next-themes](https://next-themes-example.vercel.app/) - Theme manager<br>
 
 ## Directory Structure
 
