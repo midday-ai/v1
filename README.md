@@ -35,6 +35,7 @@ Everything you need to build a production ready SaaS, it's a opinionated stack b
 [Dub](https://dub.sh/) - Sharable links<br>
 [Trigger.dev](https://trigger.dev/) - Background jobs<br>
 [OpenPanel](https://openpanel.dev/) - Analytics<br>
+[Polar](https://polar.sh) - Billing (coming soon)<br>
 [react-safe-action](https://next-safe-action.dev) - Validated Server Actions<br>
 [nuqs](https://nuqs.47ng.com/) - Type-safe search params state manager<br>
 [next-themes](https://next-themes-example.vercel.app/) - Theme manager<br>
