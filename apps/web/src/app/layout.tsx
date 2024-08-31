@@ -16,7 +16,8 @@ const DepartureMono = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL("https://v1.run"),
   title: "Create v1",
-  description: "Everything you need to build a production ready SaaS",
+  description:
+    "A free, open-source starter kit for your next project, built with insights from Midday.",
 };
 
 export default function RootLayout({
