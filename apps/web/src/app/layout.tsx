@@ -14,7 +14,7 @@ const DepartureMono = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://v1.dev"),
+  metadataBase: new URL("https://v1.run"),
   title: "Create v1",
   description: "Everything you need to build a production ready SaaS",
 };
