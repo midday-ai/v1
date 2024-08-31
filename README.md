@@ -1,6 +1,17 @@
 ![hero](image.png)
 
-## Create v1
+
+<p align="center">
+	<h1 align="center"><b>Create v1</b></h1>
+<p align="center">
+    An open-source starter kit based on [Midday](https://midday.ai?utm_source=v1).
+    <br />
+    <br />
+    <a href="https://v1.run">Website</a>
+    ·
+    <a href="https://github.com/midday-ai/v1/issues">Issues</a>
+  </p>
+</p>
 
 Everything you need to build a production ready SaaS, it's a opinionated stack based on learnings from building [Midday](https://midday.ai?utm_source=v1) using the latest Next.js framework, it's a monorepo with a focus on code reuse and best practices that will grow with your business.
 
