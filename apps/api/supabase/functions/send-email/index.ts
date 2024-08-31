@@ -1,4 +1,4 @@
-import { WelcomeEmail } from "@v1/ui/emails/welcome";
+import { WelcomeEmail } from "@v1/emails/welcome";
 import React from "react";
 import { render } from "react-email/components";
 import { Resend } from "resend";
