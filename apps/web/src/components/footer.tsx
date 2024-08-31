@@ -6,6 +6,7 @@ export function Footer() {
       <div className="relative flex overflow-x-hidden space-x-6">
         <div className="flex items-center space-x-6 animate-marquee whitespace-nowrap md:animate-none">
           <a
+            title="Vercel"
             href="https://vercel.com?utm_source=v1"
             target="_blank"
             rel="noopener noreferrer"
@@ -24,6 +25,7 @@ export function Footer() {
           </a>
 
           <a
+            title="Supabase"
             href="https://supabase.com?utm_source=v1"
             target="_blank"
             rel="noopener noreferrer"
@@ -48,6 +50,7 @@ export function Footer() {
           </a>
 
           <a
+            title="Trigger"
             href="https://trigger.dev?utm_source=v1"
             target="_blank"
             rel="noopener noreferrer"
@@ -125,6 +128,7 @@ export function Footer() {
           </a>
 
           <a
+            title="Resend"
             href="https://resend.com?utm_source=v1"
             target="_blank"
             rel="noopener noreferrer"
@@ -143,6 +147,7 @@ export function Footer() {
           </a>
 
           <a
+            title="Upstash"
             href="https://upstash.com?utm_source=v1"
             target="_blank"
             rel="noopener noreferrer"
@@ -206,6 +211,7 @@ export function Footer() {
           </a>
 
           <a
+            title="Dub"
             href="https://dub.sh?utm_source=v1"
             target="_blank"
             rel="noopener noreferrer"
@@ -239,6 +245,7 @@ export function Footer() {
           </a>
 
           <a
+            title="Kenshu"
             href="https://kenshu.team/?utm_source=v1"
             target="_blank"
             rel="noopener noreferrer"
@@ -278,6 +285,7 @@ export function Footer() {
           </a>
 
           <a
+            title="Turbo"
             href="https://turbo.build/?utm_source=v1"
             target="_blank"
             rel="noopener noreferrer"
@@ -335,6 +343,7 @@ export function Footer() {
 
         <div className="flex items-center space-x-6 animate-marquee2 whitespace-nowrap absolute top-0 md:hidden">
           <a
+            title="Vercel"
             href="https://vercel.com?utm_source=v1"
             target="_blank"
             rel="noopener noreferrer"
@@ -353,6 +362,7 @@ export function Footer() {
           </a>
 
           <a
+            title="Supabase"
             href="https://supabase.com?utm_source=v1"
             target="_blank"
             rel="noopener noreferrer"
@@ -377,6 +387,7 @@ export function Footer() {
           </a>
 
           <a
+            title="Trigger"
             href="https://trigger.dev?utm_source=v1"
             target="_blank"
             rel="noopener noreferrer"
@@ -454,6 +465,7 @@ export function Footer() {
           </a>
 
           <a
+            title="Resend"
             href="https://resend.com?utm_source=v1"
             target="_blank"
             rel="noopener noreferrer"
@@ -472,6 +484,7 @@ export function Footer() {
           </a>
 
           <a
+            title="Upstash"
             href="https://upstash.com?utm_source=v1"
             target="_blank"
             rel="noopener noreferrer"
@@ -535,6 +548,7 @@ export function Footer() {
           </a>
 
           <a
+            title="Dub"
             href="https://dub.sh?utm_source=v1"
             target="_blank"
             rel="noopener noreferrer"
@@ -568,6 +582,7 @@ export function Footer() {
           </a>
 
           <a
+            title="Kenshu"
             href="https://kenshu.team/?utm_source=v1"
             target="_blank"
             rel="noopener noreferrer"
@@ -606,6 +621,7 @@ export function Footer() {
             </svg>
           </a>
           <a
+            title="Turbo"
             href="https://turbo.build/?utm_source=v1"
             target="_blank"
             rel="noopener noreferrer"
