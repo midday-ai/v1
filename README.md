@@ -36,6 +36,29 @@ Everything you need to build a production ready SaaS, it's a opinionated stack b
 **nuqs** - Type-safe search params state manager<br>
 **next-themes** - Theme manager<br>
 
+## Directory Structure
+
+```
+.
+├── apps                         # App workspace
+│    ├── api                     # Supabase (API, Auth, Storage, Realtime, Edge Functions)
+│    ├── app                     # App - your product
+│    ├── web                     # Marketing site
+│    └── ...
+├── packages                     # Shared packages between apps
+│    ├── analytics               # OpenPanel analytics
+│    ├── email                   # React email library
+│    ├── jobs                    # Trigger.dev background jobs
+│    ├── kv                      # Upstash rate-limited key-value storage
+│    ├── logger                  # Logger library
+│    ├── supabase                # Supabase - Queries, Mutations, Clients
+│    └── ui                      # Shared UI components (Shadcn)
+├── tooling                      # are the shared configuration that are used by the apps and packages
+│    └── typescript              # Shared TypeScript configuration
+├── LICENSE
+└── README.md
+```
+
 ## Prerequisites
 
 Bun<br>
