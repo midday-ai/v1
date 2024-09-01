@@ -21,7 +21,8 @@
     "format": "biome format --write .",
     "lint": "turbo lint && manypkg check",
     "typecheck": "turbo typecheck",
-    "prepare": "husky"
+    "prepare": "husky",
+    "gen": "turbo gen --config 'turbo/generator/config.ts'"
   },
   "lint-staged": {
     "*": ["cspell --no-must-find-files", "biome format --write"],
@@ -40,6 +41,7 @@
     "@commitlint/types": "^19.0.3",
     "@manypkg/cli": "^0.21.4",
     "@t3-oss/env-nextjs": "^0.11.1",
+    "@turbo/gen": "^2.1.1",
     "cspell": "^8.11.0",
     "git-cz": "^4.9.0",
     "lint-staged": "^15.2.7",
