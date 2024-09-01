@@ -6,7 +6,7 @@ export async function UsersServer() {
   return (
     <div>
       {data?.map((user) => (
-        <div key={user.id}>{user.name}</div>
+        <div key={user.id}>{user.full_name}</div>
       ))}
     </div>
   );
