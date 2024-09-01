@@ -11,9 +11,9 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@openpanel/nextjs": "^1.0.0",
     "@v1/logger": "workspace:*",
-    "@vercel/functions": "^1.4.1",
-    "@openpanel/nextjs": "^1.0.0"
+    "@vercel/functions": "^1.4.1"
   },
   "exports": {
     "./server": "./src/server.ts",
