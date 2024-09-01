@@ -1,0 +1,11 @@
+TOKEN "email_events_token" READ
+
+SCHEMA >
+    `user_id` String `json:$.user_id`,
+    `email_id` String `json:$.email_id`,
+    `event_type` LowCardinality(String) `json:$.event_type`,
+    `timestamp` DateTime64(3) `json:$.timestamp`,
+    `metadata` String `json:$.metadata`
+
+ENGINE "MergeTree"
+ENGINE_SORTING_KEY "user_id, email_id, timestamp"

@@ -11,6 +11,12 @@ ignorePaths:
   - package-lock.json
   - package.json
 words:
+  - asynciterable
+  - Tinybird
+  - datasource
+  - TINYBIRD
+  - tinybird
+  - chronark
   - supabase
   - plpgsql
   - ossp
