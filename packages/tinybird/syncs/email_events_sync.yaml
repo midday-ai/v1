@@ -1,0 +1,7 @@
+type: http
+endpoint: /v0/events
+datasource: email_events
+items: '{{ items }}'
+method: POST
+headers:
+  Authorization: Bearer {{ env.TINYBIRD_TOKEN }}

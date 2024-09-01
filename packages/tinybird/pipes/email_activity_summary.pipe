@@ -1,0 +1,25 @@
+TOKEN "email_activity_summary_token" READ
+
+NODE summary
+SQL >
+    SELECT
+        user_id,
+        toDate(timestamp) AS date,
+        countIf(event_type = 'open') AS opens,
+        countIf(event_type = 'click') AS clicks,
+        countIf(event_type = 'reply') AS replies
+    FROM email_events
+    GROUP BY user_id, date
+    ORDER BY date DESC
+
+TYPE materialized
+DATASOURCE email_activity_summary_mv
+
+NODE endpoint
+SQL >
+    SELECT *
+    FROM email_activity_summary_mv
+    WHERE user_id = {{ String(user_id, required=True) }}
+      AND date >= {{ Date(start_date, required=True) }}
+      AND date <= {{ Date(end_date, required=True) }}
+    ORDER BY date DESC

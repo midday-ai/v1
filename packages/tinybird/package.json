@@ -1,0 +1,23 @@
+{
+  "name": "@inbox-zero/tinybird",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "push:datasources": "tb push datasources",
+    "push:pipes": "tb push pipes",
+    "push:all": "npm run push:datasources && npm run push:pipes",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@chronark/zod-bird": "^0.1.3",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.31",
+    "typescript": "^4.9.5",
+    "jest": "^27.0.6",
+    "@types/jest": "^27.0.1",
+    "ts-jest": "^27.0.5"
+  }
+}
