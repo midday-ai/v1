@@ -28,3 +28,16 @@ export async function getUsers() {
     throw error;
   }
 }
+
+export async function getPosts() {
+  const supabase = createClient();
+
+  try {
+    const result = await supabase.from("posts").select("*");
+
+    return result;
+  } catch (error) {
+    logger.error(error);
+    throw error;
+  }
+}
