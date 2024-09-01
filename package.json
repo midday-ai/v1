@@ -48,6 +48,7 @@
     "markdownlint": "^0.34.0",
     "markdownlint-cli": "^0.41.0",
     "pkg-types": "^1.2.0",
+    "stripe": "^16.9.0",
     "turbo": "2.1.1",
     "typescript": "^5.5.4",
     "yargs": "^17.7.2"

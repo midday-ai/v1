@@ -11,6 +11,9 @@ ignorePaths:
   - package-lock.json
   - package.json
 words:
+  - supabase
+  - plpgsql
+  - ossp
   - acst
   - aest
   - akst
