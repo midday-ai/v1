@@ -3,6 +3,12 @@
   "private": true,
   "workspaces": ["packages/*", "apps/*", "tooling/*"],
   "scripts": {
+    "commit": "git-cz",
+    "lint:md": "markdownlint \"**/*.md\" --dot --ignore node_modules --ignore .changeset",
+    "lint:spell": "cspell \"**\" --gitignore --dot --no-progress --cache --unique ",
+    "release": "turbo run build lint typecheck && changeset version && changeset publish",
+    "reset:changelog": "bun run rm -rf */**/CHANGELOG.md",
+    "update:workspace": "bun run ./scripts/update-workspace",
     "build": "turbo build",
     "clean": "git clean -xdf node_modules",
     "clean:workspaces": "turbo clean",
@@ -14,14 +20,38 @@
     "test": "turbo test --parallel",
     "format": "biome format --write .",
     "lint": "turbo lint && manypkg check",
-    "typecheck": "turbo typecheck"
+    "typecheck": "turbo typecheck",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*": ["cspell --no-must-find-files", "biome format --write"],
+    "**/*.{md,mdx}": ["markdownlint"]
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
   },
   "dependencies": {
     "@biomejs/biome": "1.8.3",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@commitlint/cz-commitlint": "^19.2.0",
+    "@commitlint/types": "^19.0.3",
     "@manypkg/cli": "^0.21.4",
     "@t3-oss/env-nextjs": "^0.11.1",
+    "cspell": "^8.11.0",
+    "git-cz": "^4.9.0",
+    "lint-staged": "^15.2.7",
+    "markdownlint": "^0.34.0",
+    "markdownlint-cli": "^0.41.0",
+    "pkg-types": "^1.2.0",
     "turbo": "2.1.1",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "yargs": "^17.7.2"
   },
-  "packageManager": "bun@1.1.26"
+  "packageManager": "bun@1.1.26",
+  "devDependencies": {
+    "husky": "^9.1.5"
+  }
 }
