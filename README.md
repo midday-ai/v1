@@ -1,44 +1,45 @@
-![hero](image.png)
-
+# Create v1
 
 <p align="center">
-	<h1 align="center"><b>Create v1</b></h1>
-<p align="center">
-    An open-source starter kit based on <a href="https://midday.ai">Midday</a>.
-    <br />
-    <br />
-    <a href="https://v1.run"><strong>Website</strong></a> · 
-    <a href="https://github.com/midday-ai/v1/issues"><strong>Issues</strong></a> · 
-    <a href="#whats-included"><strong>What's included</strong></a> ·
-    <a href="#prerequisites"><strong>Prerequisites</strong></a> ·
-    <a href="#getting-started"><strong>Getting Started</strong></a> ·
-    <a href="#how-to-use"><strong>How to use</strong></a>
-  </p>
+  <img src="image.png" alt="Create v1 Hero" width="100%"/>
 </p>
 
-Everything you need to build a production ready SaaS, it's a opinionated stack based on learnings from building Midday using the latest Next.js framework, it's a monorepo with a focus on code reuse and best practices that will grow with your business.
+<p align="center">
+  <a href="https://github.com/midday-ai/v1/actions"><img src="https://github.com/midday-ai/v1/workflows/CI/badge.svg" alt="Build Status"></a>
+  <a href="https://github.com/midday-ai/v1/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
+  <a href="https://github.com/midday-ai/v1/releases"><img src="https://img.shields.io/github/v/release/midday-ai/v1.svg" alt="Latest Release"></a>
+  <a href="https://github.com/midday-ai/v1/stargazers"><img src="https://img.shields.io/github/stars/midday-ai/v1.svg?style=social" alt="GitHub stars"></a>
+</p>
 
-## What's included
+<p align="center">
+  <b>The ultimate open-source starter kit for building production-ready SaaS applications</b>
+</p>
 
-[Next.js](https://nextjs.org/) - Framework<br>
-[Turborepo](https://turbo.build) - Build system<br>
-[Biome](https://biomejs.dev) - Linter, formatter<br>
-[TailwindCSS](https://tailwindcss.com/) - Styling<br>
-[Shadcn](https://ui.shadcn.com/) - UI components<br>
-[TypeScript](https://www.typescriptlang.org/) - Type safety<br>
-[Supabase](https://supabase.com/) - Authentication, database, storage<br>
-[Upstash](https://upstash.com/) - Cache and rate limiting<br>
-[React Email](https://react.email/) - Email templates<br>
-[Resend](https://resend.com/) - Email delivery<br>
-[i18n](https://next-international.vercel.app/) - Internationalization<br>
-[Sentry](https://sentry.io/) - Error handling/monitoring<br>
-[Dub](https://dub.sh/) - Sharable links<br>
-[Trigger.dev](https://trigger.dev/) - Background jobs<br>
-[OpenPanel](https://openpanel.dev/) - Analytics<br>
-[Polar](https://polar.sh) - Billing (coming soon)<br>
-[react-safe-action](https://next-safe-action.dev) - Validated Server Actions<br>
-[nuqs](https://nuqs.47ng.com/) - Type-safe search params state manager<br>
-[next-themes](https://next-themes-example.vercel.app/) - Theme manager<br>
+Create v1 is a comprehensive, opinionated stack based on learnings from building [Midday](https://midday.ai). It provides everything developers need to go from idea to launch quickly and efficiently, whether you're a solo developer or part of a team building scalable SaaS products.
+
+## Table of Contents
+
+- [Features and Benefits](#features-and-benefits)
+- [Directory Structure](#directory-structure)
+- [Quick Start](#quick-start)
+- [What's Included](#whats-included)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [How to Use](#how-to-use)
+- [License](#license)
+
+## Features and Benefits
+
+- 🚀 **Production-Ready**: Built with best practices and optimized for performance
+- 📦 **Scalable Architecture**: Monorepo setup for easy code sharing and maintenance
+- 🛠 **Full-Stack Solution**: Includes frontend, backend, and DevOps tooling
+- 🔧 **Modern Tech Stack**: Utilizes the latest and most powerful web technologies
+- 💻 **Developer Experience**: Optimized workflow with linting, formatting, and type safety
+- 🎨 **Customizable**: Easy to extend and adapt to your specific needs
+- 🌐 **Internationalization**: Built-in support for multiple languages
+- 📧 **Email Integration**: Ready-to-use email templates and delivery system
+- 🔒 **Security First**: Implements best practices for authentication and data protection
+- 📊 **Analytics and Monitoring**: Integrated tools for tracking performance and user behavior
 
 ## Directory Structure
 
@@ -66,55 +67,127 @@ Everything you need to build a production ready SaaS, it's a opinionated stack b
 └── README.md
 ```
 
+## Quick Start
+
+Get up and running in minutes:
+
+```bash
+bunx degit midday-ai/v1 my-saas-app
+cd my-saas-app
+bun i
+bun dev
+```
+
+Visit `http://localhost:3000` to see your app in action.
+
+## What's Included
+
+### Core Framework
+- **[Next.js](https://nextjs.org/)**: React framework for production-grade apps.
+- **[TypeScript](https://www.typescriptlang.org/)**: Adds static typing for improved developer experience and code quality.
+
+### Styling and UI
+- **[TailwindCSS](https://tailwindcss.com/)**: Utility-first CSS framework for rapid UI development.
+- **[Shadcn](https://ui.shadcn.com/)**: Customizable UI components built on top of Radix UI.
+
+### Backend and Database
+- **[Supabase](https://supabase.com/)**: Open-source Firebase alternative for authentication, database, and storage.
+- **[Upstash](https://upstash.com/)**: Serverless Redis for caching and rate limiting.
+
+### DevOps and Tooling
+- **[Turborepo](https://turbo.build)**: Monorepo build system for optimal DX and performance.
+- **[Biome](https://biomejs.dev)**: Fast linter and formatter for consistent code style.
+
+### Email and Communications
+- **[React Email](https://react.email/)**: Customizable email templates.
+- **[Resend](https://resend.com/)**: Reliable email delivery service.
+
+### Internationalization
+- **[i18n](https://next-international.vercel.app/)**: Easy-to-use internationalization library.
+
+### Monitoring and Analytics
+- **[Sentry](https://sentry.io/)**: Error tracking and performance monitoring.
+- **[OpenPanel](https://openpanel.dev/)**: Privacy-friendly analytics platform.
+
+### Additional Tools
+- **[Dub](https://dub.sh/)**: Custom URL shortener and link management.
+- **[Trigger.dev](https://trigger.dev/)**: Powerful workflow automation platform.
+- **[Polar](https://polar.sh)**: Integrated billing solution (coming soon).
+
 ## Prerequisites
 
-Bun<br>
-Docker<br>
-Upstash<br>
-Dub<br>
-Trigger.dev<br>
-Resend<br>
-Supabase<br>
-Sentry<br>
-OpenPanel<br>
+Before you begin, ensure you have the following installed:
+
+- **[Bun](https://bun.sh/)**: Fast all-in-one JavaScript runtime
+- **[Docker](https://www.docker.com/)**: Containerization platform for easy deployment
+- **[Git](https://git-scm.com/)**: Version control system
+
+You'll also need accounts for the following services:
+
+- [Upstash](https://upstash.com/)
+- [Dub](https://dub.sh/)
+- [Trigger.dev](https://trigger.dev/)
+- [Resend](https://resend.com/)
+- [Supabase](https://supabase.com/)
+- [Sentry](https://sentry.io/)
+- [OpenPanel](https://openpanel.dev/)
 
 ## Getting Started
 
-Clone this repo locally with the following command:
+1. Clone the repository:
+   ```bash
+   bunx degit midday-ai/v1 my-saas-app
+   cd my-saas-app
+   ```
 
-```bash
-bunx degit midday-ai/v1 v1
-```
+2. Install dependencies:
+   ```bash
+   bun i
+   ```
 
-1. Install dependencies using bun:
+3. Set up environment variables:
+   ```bash
+   cp apps/api/.env.example apps/api/.env
+   cp apps/app/.env.example apps/app/.env
+   cp apps/web/.env.example apps/web/.env
+   ```
+   Update the `.env` files with your service credentials.
 
-```sh
-bun i
-```
+4. Start the development server:
+   ```bash
+   bun dev
+   ```
 
-2. Copy `.env.example` to `.env` and update the variables.
+5. Open `http://localhost:3000` in your browser to see the app running.
 
-```sh
-# Copy .env.example to .env for each app
-cp apps/api/.env.example apps/api/.env
-cp apps/app/.env.example apps/app/.env
-cp apps/web/.env.example apps/web/.env
-```
+## How to Use
 
-4. Start the development server from either bun or turbo:
+### Adding a New Page
 
-```ts
-bun dev // starts everything in development mode (web, app, api, email)
-bun dev:web // starts the web app in development mode
-bun dev:app // starts the app in development mode
-bun dev:api // starts the api in development mode
-bun dev:email // starts the email app in development mode
-```
+1. Create a new file in `apps/app/pages/`
+2. Use components from `packages/ui` for consistent styling
+3. Update navigation in `apps/app/components/Layout.tsx` if necessary
 
-## How to use
-This boilerplate is inspired by our work on Midday, and it's designed to serve as a reference for real-world apps. Feel free to dive into the code and see how we've tackled various features. Whether you're looking to understand authentication flows, database interactions, or UI components, you'll find practical, battle-tested implementations throughout the codebase. It's not just a starting point; it's a learning resource that can help you build your own applications.
+### Customizing the Theme
 
-With this, you have a great starting point for your own project.
+1. Modify `apps/app/tailwind.config.js`
+2. Update global styles in `apps/app/styles/globals.css`
+
+### Adding a New API Endpoint
+
+1. Create a new file in `apps/api/functions/`
+2. Use the Supabase client from `packages/supabase` for database operations
+3. Test your endpoint using the included Postman collection
+
+### Implementing Internationalization
+
+1. Add new translations in `apps/app/locales/`
+2. Use the `useTranslation` hook in your components
+
+### Setting Up Email Templates
+
+1. Create new email templates in `packages/email/templates/`
+2. Use the `sendEmail` function from `packages/email` to send emails
 
 ## Deploy to Vercel
 
@@ -131,3 +204,13 @@ Vercel deployment will guide you through creating a Supabase account and project
     src="https://hackernews-badge.vercel.app/api?id=41408929"
   />
 </a>
+
+## License
+
+Create v1 is open-source software licensed under the [MIT license](https://github.com/midday-ai/v1/blob/main/LICENSE).
+
+---
+
+<p align="center">
+  Built with ❤️ by the <a href="https://midday.ai">Midday</a> team and contributors.
+</p>
