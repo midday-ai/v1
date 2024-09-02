@@ -3,7 +3,11 @@
   "private": true,
   "scripts": {
     "dev": "supabase start",
-    "login": "supabase login"
+    "login": "supabase login",
+    "lint": "supabase db lint",
+    "migrate": "supabase migration up",
+    "seed": "supabase db seed generate && supabase db seed run",
+    "reset": "supabase db reset"
   },
   "dependencies": {
     "supabase": "^1.191.3"

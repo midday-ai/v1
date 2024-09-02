@@ -12,7 +12,7 @@ create table posts (
 alter table
   posts
 add
-  constraint fk_posts_user foreign key (user_id) references public .users(id) on
+  constraint fk_posts_user foreign key (user_id) references public.users(id) on
 delete
   cascade;
 
@@ -27,7 +27,7 @@ alter table
 create policy "allow read access for all authenticated users" on posts for
 select
   to authenticated
-  using ( true );
+  using (true);
 
 -- policy to allow users to insert their own posts
 create policy "allow insert for authenticated users" on posts for
@@ -47,7 +47,7 @@ delete
 -- function to update the updated_at timestamp
 create
 or replace function update_updated_at() returns trigger as $$ begin
-  new .updated_at = now();
+  new.updated_at = now();
 
 return new;
 
