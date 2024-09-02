@@ -1,7 +1,8 @@
 import { logger } from "@v1/logger";
 import { createClient } from "@v1/supabase/server";
+import type { Database, Tables } from "../types";
 
-export async function updateUser(userId: string, data: unknown) {
+export async function updateUser(userId: string, data: Tables<"users">) {
   const supabase = createClient();
 
   try {
