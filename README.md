@@ -16,7 +16,7 @@
   <b>The ultimate open-source starter kit for building production-ready SaaS applications</b>
 </p>
 
-Everything you need to build a production ready SaaS, it's a opinionated stack based on learnings from building [Midday](https://midday.ai) using the latest Next.js framework, it's a monorepo with a focus on code reuse and best practices that will grow with your business.
+> Everything you need to build a production-ready SaaS. It's an opinionated stack based on learnings from building [Midday](https://midday.ai) using the latest Next.js framework. It's a monorepo with a focus on code reuse and best practices that will grow with your business.
 
 ## Table of Contents
 
