@@ -1,3 +1,3 @@
-export function UsersLoading() {
+export function PostsLoading() {
   return <div>Loading...</div>;
 }

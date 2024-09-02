@@ -15,16 +15,15 @@ export async function getUser() {
   }
 }
 
-export async function getUsers() {
+export async function getPosts() {
   const supabase = createClient();
 
   try {
-    const result = await supabase.from("users").select("*");
+    const result = await supabase.from("posts").select("*");
 
     return result;
   } catch (error) {
     logger.error(error);
-
     throw error;
   }
 }

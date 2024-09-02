@@ -109,6 +109,10 @@ bun dev:web // starts the web app in development mode
 bun dev:app // starts the app in development mode
 bun dev:api // starts the api in development mode
 bun dev:email // starts the email app in development mode
+
+// Database
+bun migrate // run migrations
+bun seed // run seed
 ```
 
 ## How to use
