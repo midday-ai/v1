@@ -2,8 +2,7 @@ name: Check
 on:
   push:
     paths:
-      - apps/website/**
-      - packages/**
+      - '**'
 jobs:
   check:
     runs-on: ubuntu-latest
