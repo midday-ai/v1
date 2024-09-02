@@ -5,8 +5,6 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/midday-ai/v1/actions"><img src="https://github.com/midday-ai/v1/workflows/CI/badge.svg" alt="Build Status"></a>
-  <a href="https://coveralls.io/github/midday-ai/v1"><img src="https://coveralls.io/repos/github/midday-ai/v1/badge.svg?branch=main" alt="Coverage Status"></a>
   <a href="https://github.com/midday-ai/v1/issues"><img src="https://img.shields.io/github/issues/midday-ai/v1.svg" alt="Open Issues"></a>
   <a href="https://github.com/midday-ai/v1/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
   <a href="https://github.com/midday-ai/v1/stargazers"><img src="https://img.shields.io/github/stars/midday-ai/v1.svg?style=social" alt="GitHub stars"></a>
