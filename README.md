@@ -6,23 +6,26 @@
 
 <p align="center">
   <a href="https://github.com/midday-ai/v1/actions"><img src="https://github.com/midday-ai/v1/workflows/CI/badge.svg" alt="Build Status"></a>
+  <a href="https://coveralls.io/github/midday-ai/v1"><img src="https://coveralls.io/repos/github/midday-ai/v1/badge.svg?branch=main" alt="Coverage Status"></a>
+  <a href="https://github.com/midday-ai/v1/issues"><img src="https://img.shields.io/github/issues/midday-ai/v1.svg" alt="Open Issues"></a>
   <a href="https://github.com/midday-ai/v1/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
-  <a href="https://github.com/midday-ai/v1/releases"><img src="https://img.shields.io/github/v/release/midday-ai/v1.svg" alt="Latest Release"></a>
   <a href="https://github.com/midday-ai/v1/stargazers"><img src="https://img.shields.io/github/stars/midday-ai/v1.svg?style=social" alt="GitHub stars"></a>
+  <a href="https://github.com/midday-ai/v1/network/members"><img src="https://img.shields.io/github/forks/midday-ai/v1.svg?style=social" alt="GitHub forks"></a>
+  <a href="https://github.com/midday-ai/v1/graphs/contributors"><img src="https://img.shields.io/github/contributors/midday-ai/v1.svg" alt="Contributors"></a>
 </p>
 
 <p align="center">
   <b>The ultimate open-source starter kit for building production-ready SaaS applications</b>
 </p>
 
-Create v1 is a comprehensive, opinionated stack based on learnings from building [Midday](https://midday.ai). It provides everything developers need to go from idea to launch quickly and efficiently, whether you're a solo developer or part of a team building scalable SaaS products.
+Everything you need to build a production ready SaaS, it's a opinionated stack based on learnings from building [Midday](https://midday.ai) using the latest Next.js framework, it's a monorepo with a focus on code reuse and best practices that will grow with your business.
 
 ## Table of Contents
 
 - [Features and Benefits](#features-and-benefits)
+- [What's Included](#whats-included)
 - [Directory Structure](#directory-structure)
 - [Quick Start](#quick-start)
-- [What's Included](#whats-included)
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
 - [How to Use](#how-to-use)
@@ -40,6 +43,40 @@ Create v1 is a comprehensive, opinionated stack based on learnings from building
 - 📧 **Email Integration**: Ready-to-use email templates and delivery system
 - 🔒 **Security First**: Implements best practices for authentication and data protection
 - 📊 **Analytics and Monitoring**: Integrated tools for tracking performance and user behavior
+
+## What's Included
+
+### Core Framework
+- **[Next.js](https://nextjs.org/)**: React framework for production-grade apps.
+- **[TypeScript](https://www.typescriptlang.org/)**: Adds static typing for improved developer experience and code quality.
+
+### Styling and UI
+- **[TailwindCSS](https://tailwindcss.com/)**: Utility-first CSS framework for rapid UI development.
+- **[Shadcn](https://ui.shadcn.com/)**: Customizable UI components built on top of Radix UI.
+
+### Backend and Database
+- **[Supabase](https://supabase.com/)**: Open-source Firebase alternative for authentication, database, and storage.
+- **[Upstash](https://upstash.com/)**: Serverless Redis for caching and rate limiting.
+
+### DevOps and Tooling
+- **[Turborepo](https://turbo.build)**: Monorepo build system for optimal DX and performance.
+- **[Biome](https://biomejs.dev)**: Fast linter and formatter for consistent code style.
+
+### Email and Communications
+- **[React Email](https://react.email/)**: Customizable email templates.
+- **[Resend](https://resend.com/)**: Reliable email delivery service.
+
+### Internationalization
+- **[i18n](https://next-international.vercel.app/)**: Easy-to-use internationalization library.
+
+### Monitoring and Analytics
+- **[Sentry](https://sentry.io/)**: Error tracking and performance monitoring.
+- **[OpenPanel](https://openpanel.dev/)**: Privacy-friendly analytics platform.
+
+### Additional Tools
+- **[Dub](https://dub.sh/)**: Custom URL shortener and link management.
+- **[Trigger.dev](https://trigger.dev/)**: Powerful workflow automation platform.
+- **[Polar](https://polar.sh)**: Integrated billing solution (coming soon).
 
 ## Directory Structure
 
@@ -80,39 +117,6 @@ bun dev
 
 Visit `http://localhost:3000` to see your app in action.
 
-## What's Included
-
-### Core Framework
-- **[Next.js](https://nextjs.org/)**: React framework for production-grade apps.
-- **[TypeScript](https://www.typescriptlang.org/)**: Adds static typing for improved developer experience and code quality.
-
-### Styling and UI
-- **[TailwindCSS](https://tailwindcss.com/)**: Utility-first CSS framework for rapid UI development.
-- **[Shadcn](https://ui.shadcn.com/)**: Customizable UI components built on top of Radix UI.
-
-### Backend and Database
-- **[Supabase](https://supabase.com/)**: Open-source Firebase alternative for authentication, database, and storage.
-- **[Upstash](https://upstash.com/)**: Serverless Redis for caching and rate limiting.
-
-### DevOps and Tooling
-- **[Turborepo](https://turbo.build)**: Monorepo build system for optimal DX and performance.
-- **[Biome](https://biomejs.dev)**: Fast linter and formatter for consistent code style.
-
-### Email and Communications
-- **[React Email](https://react.email/)**: Customizable email templates.
-- **[Resend](https://resend.com/)**: Reliable email delivery service.
-
-### Internationalization
-- **[i18n](https://next-international.vercel.app/)**: Easy-to-use internationalization library.
-
-### Monitoring and Analytics
-- **[Sentry](https://sentry.io/)**: Error tracking and performance monitoring.
-- **[OpenPanel](https://openpanel.dev/)**: Privacy-friendly analytics platform.
-
-### Additional Tools
-- **[Dub](https://dub.sh/)**: Custom URL shortener and link management.
-- **[Trigger.dev](https://trigger.dev/)**: Powerful workflow automation platform.
-- **[Polar](https://polar.sh)**: Integrated billing solution (coming soon).
 
 ## Prerequisites
 
@@ -197,11 +201,13 @@ Vercel deployment will guide you through creating a Supabase account and project
 
 ## Recognition
 
-<a href="https://news.ycombinator.com/item?id=41408929">
+<a href="https://news.ycombinator.com/item?id=41408929" style="text-decoration: none; display: inline-block;">
   <img
-    style="width: 250px; height: 54px;" width="250" height="54"
-    alt="Featured on Hacker News"
     src="https://hackernews-badge.vercel.app/api?id=41408929"
+    alt="Featured on Hacker News"
+    style="width: 250px; height: 54px; border: none; vertical-align: middle;"
+    width="250"
+    height="54"
   />
 </a>
 
