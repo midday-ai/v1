@@ -35,10 +35,10 @@ create trigger users_updated_at before
 update
   on public .users for each row execute function update_updated_at();
 
--- create a policy to allow users to read all profiles
-create policy read_all_profiles on public .users for
+-- create a policy to allow users to read their own profile
+create policy select_own_profile on public .users for
 select
-  using (true);
+  using (auth.uid() = id);
 
 -- create a policy to allow users to update their own profile
 create policy update_own_profile on public .users for

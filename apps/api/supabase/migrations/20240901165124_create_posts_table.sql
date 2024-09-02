@@ -23,10 +23,11 @@ create index idx_posts_user_id on posts(user_id);
 alter table
   posts enable row level security;
 
--- policy to allow anyone to read all posts
-create policy "allow read access for all users" on posts for
+-- policy to allow read access for all authenticated users
+create policy "allow read access for all authenticated users" on posts for
 select
-  using (true);
+  to authenticated
+  using ( true );
 
 -- policy to allow users to insert their own posts
 create policy "allow insert for authenticated users" on posts for
