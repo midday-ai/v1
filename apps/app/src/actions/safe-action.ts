@@ -47,9 +47,9 @@ export const authActionClient = actionClientWithMeta
     const result = await next({ ctx: {} });
 
     if (process.env.NODE_ENV === "development") {
-      logger("Input ->", clientInput);
-      logger("Result ->", result.data);
-      logger("Metadata ->", metadata);
+      logger.info(`Input -> ${JSON.stringify(clientInput)}`);
+      logger.info(`Result -> ${JSON.stringify(result.data)}`);
+      logger.info(`Metadata -> ${JSON.stringify(metadata)}`);
 
       return result;
     }
