@@ -1,4 +1,4 @@
-project_id = "create-v1"
+project_id = "env(PROJECT_ID)"
 
 [api]
 enabled = true
