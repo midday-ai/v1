@@ -30,6 +30,9 @@
     "test": {
       "cache": false
     },
+    "clean": {
+      "cache": false
+    },
     "dev": {
       "inputs": ["$TURBO_DEFAULT$", ".env"],
       "persistent": true,
