@@ -29,7 +29,7 @@ export function Header() {
       </Link>
 
       <nav className="md:mt-2">
-        <ul className="flex gap-4">
+        <ul className="flex items-center gap-4">
           <li>
             <a
               href="https://github.com/midday-ai/v1"
