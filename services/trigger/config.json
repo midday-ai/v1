@@ -1,0 +1,13 @@
+{
+  "name": "Trigger.dev",
+  "envs": {
+    "TRIGGER_API_KEY": {
+      "description": "The API key to use for Trigger",
+      "required": true
+    },
+    "TRIGGER_PROJECT_ID": {
+      "description": "The project ID to use for Trigger (https://trigger.dev/docs/trigger-config)",
+      "required": true
+    }
+  }
+}

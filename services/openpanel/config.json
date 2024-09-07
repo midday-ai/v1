@@ -1,0 +1,13 @@
+{
+  "name": "OpenPanel",
+  "envs": {
+    "OPENPANEL_API_KEY": {
+      "description": "The API key to use for OpenPanel",
+      "required": true
+    },
+    "OPENPANEL_PROJECT_ID": {
+      "description": "The project ID to use for OpenPanel",
+      "required": true
+    }
+  }
+}

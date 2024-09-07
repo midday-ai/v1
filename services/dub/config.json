@@ -1,0 +1,12 @@
+{
+  "name": "Dub",
+  "envs": {
+    "DUB_API_KEY": {
+      "description": "The API key to use for Dub",
+      "required": true
+    }
+  },
+  "generate": {
+    "src/index.ts": "apps/app/src/libs/dub.ts"
+  }
+}

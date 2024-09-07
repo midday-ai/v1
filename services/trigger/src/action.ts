@@ -1,7 +1,7 @@
 "use server";
 
 import { tasks } from "@trigger.dev/sdk/v3";
-import type { helloWorldTask } from "@v1/jobs/trigger/example";
+import type { helloWorldTask } from "@v1/trigger/src/example";
 
 export async function myTask() {
   try {

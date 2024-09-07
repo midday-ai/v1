@@ -1,15 +1,15 @@
 {
-  "name": "@v1/jobs",
-  "version": "0.1.0",
+  "name": "@v1/sentry",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "clean": "rm -rf .turbo node_modules",
     "lint": "biome check .",
-    "jobs": "bunx trigger.dev@beta dev",
     "format": "biome format --write .",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@trigger.dev/sdk": "3.0.0-beta.56"
+    "@sentry/nextjs": "^8",
+    "@supabase/sentry-js-integration": "^0.3.0"
   }
 }

@@ -1,5 +1,3 @@
-import "server-only";
-
 import { Ratelimit } from "@upstash/ratelimit";
 import { client } from ".";
 

@@ -1,0 +1,9 @@
+{
+  "name": "Resend",
+  "envs": {
+    "RESEND_API_KEY": {
+      "description": "The API key to use for Resend",
+      "required": true
+    }
+  }
+}
