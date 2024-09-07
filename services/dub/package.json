@@ -1,7 +1,7 @@
 {
   "name": "@v1/dub",
   "version": "1.0.0",
-  "main": "src/index.ts",
+  "type": "module",
   "private": true,
   "sideEffects": false,
   "scripts": {
@@ -11,6 +11,6 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "dub": "^0.36.5"
+    "dub": "^0.37.1"
   }
 }
