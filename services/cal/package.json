@@ -1,15 +1,16 @@
 {
-  "name": "@v1/jobs",
-  "version": "0.1.0",
+  "name": "@v1/cal",
+  "version": "1.0.0",
+  "main": "src/index.ts",
   "private": true,
+  "sideEffects": false,
   "scripts": {
     "clean": "rm -rf .turbo node_modules",
     "lint": "biome check .",
-    "jobs": "bunx trigger.dev@beta dev",
-    "format": "biome format --write .",
+    "format": "biome --write .",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@trigger.dev/sdk": "3.0.0-beta.56"
+    "@calcom/embed-react": "^1.5.0"
   }
 }

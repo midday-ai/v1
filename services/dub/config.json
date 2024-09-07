@@ -1,1 +1,6 @@
-{}
+{
+  "name": "dub",
+  "generate": {
+    "src/index.ts": "apps/app/src/libs/dub.ts"
+  }
+}
