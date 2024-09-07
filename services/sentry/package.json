@@ -1,0 +1,15 @@
+{
+  "name": "@v1/sentry",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@sentry/nextjs": "^8",
+    "@supabase/sentry-js-integration": "^0.3.0"
+  }
+}

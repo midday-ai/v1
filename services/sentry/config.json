@@ -1,0 +1,20 @@
+{
+  "name": "sentry",
+  "envs": {
+    "SENTRY_AUTH_TOKEN": {
+      "description": "The auth token to use for Sentry",
+      "required": true
+    },
+    "NEXT_PUBLIC_SENTRY_DSN": {
+      "description": "The DSN to use for Sentry",
+      "required": true
+    }
+  },
+  "generate": {
+    "src/instrumentation/src/index.ts": "apps/app/src/instrumentation.ts",
+    "src/global-error.tsx": "apps/app/src/global-error.tsx",
+    "src/sentry.server.config.ts": "apps/app/src/sentry.server.config.ts",
+    "src/sentry.edge.config.ts": "apps/app/src/sentry.edge.config.ts",
+    "src/sentry.client.config.ts": "apps/app/src/sentry.client.config.ts"
+  }
+}

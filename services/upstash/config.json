@@ -1,3 +1,13 @@
 {
-  "name": "upstash"
+  "name": "upstash",
+  "envs": {
+    "UPSTASH_REDIS_REST_URL": {
+      "description": "The URL to use for Upstash",
+      "required": true
+    },
+    "UPSTASH_REDIS_REST_TOKEN": {
+      "description": "The token to use for Upstash",
+      "required": true
+    }
+  }
 }
