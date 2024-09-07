@@ -1,46 +1,45 @@
 ![hero](image.png)
 
-
 <p align="center">
 	<h1 align="center"><b>Create v1</b></h1>
 <p align="center">
-    An open-source starter kit based on <a href="https://midday.ai">Midday</a>.
+    <a href="https://midday.ai">Midday</a> を基にしたオープンソースのスターターキット。
     <br />
     <br />
-    <a href="https://v1.run"><strong>Website</strong></a> · 
-    <a href="https://github.com/midday-ai/v1/issues"><strong>Issues</strong></a> · 
-    <a href="#whats-included"><strong>What's included</strong></a> ·
-    <a href="#prerequisites"><strong>Prerequisites</strong></a> ·
-    <a href="#getting-started"><strong>Getting Started</strong></a> ·
-    <a href="#how-to-use"><strong>How to use</strong></a>
+    <a href="https://v1.run"><strong>ウェブサイト</strong></a> · 
+    <a href="https://github.com/midday-ai/v1/issues"><strong>イシュー</strong></a> · 
+    <a href="#whats-included"><strong>含まれるもの</strong></a> ·
+    <a href="#prerequisites"><strong>必要な環境</strong></a> ·
+    <a href="#getting-started"><strong>はじめに</strong></a> ·
+    <a href="#how-to-use"><strong>使い方</strong></a>
   </p>
 </p>
 
-Everything you need to build a production ready SaaS, it's a opinionated stack based on learnings from building Midday using the latest Next.js framework, it's a monorepo with a focus on code reuse and best practices that will grow with your business.
+Middayを構築する際の学びを活かし、最新のNext.jsフレームワークを用いた意見を反映したスタックで、ビジネスと共に成長するコード再利用とベストプラクティスに重点を置いたモノレポです。
 
-## What's included
+## 含まれている内容
 
-[Next.js](https://nextjs.org/) - Framework<br>
-[Turborepo](https://turbo.build) - Build system<br>
-[Biome](https://biomejs.dev) - Linter, formatter<br>
-[TailwindCSS](https://tailwindcss.com/) - Styling<br>
-[Shadcn](https://ui.shadcn.com/) - UI components<br>
-[TypeScript](https://www.typescriptlang.org/) - Type safety<br>
-[Supabase](https://supabase.com/) - Authentication, database, storage<br>
-[Upstash](https://upstash.com/) - Cache and rate limiting<br>
-[React Email](https://react.email/) - Email templates<br>
-[Resend](https://resend.com/) - Email delivery<br>
-[i18n](https://next-international.vercel.app/) - Internationalization<br>
-[Sentry](https://sentry.io/) - Error handling/monitoring<br>
-[Dub](https://dub.sh/) - Sharable links<br>
-[Trigger.dev](https://trigger.dev/) - Background jobs<br>
-[OpenPanel](https://openpanel.dev/) - Analytics<br>
-[Polar](https://polar.sh) - Billing (coming soon)<br>
-[react-safe-action](https://next-safe-action.dev) - Validated Server Actions<br>
-[nuqs](https://nuqs.47ng.com/) - Type-safe search params state manager<br>
-[next-themes](https://next-themes-example.vercel.app/) - Theme manager<br>
+[Next.js](https://nextjs.org/) - フレームワーク<br>
+[Turborepo](https://turbo.build) - ビルドシステム<br>
+[Biome](https://biomejs.dev) - リンター、フォーマッター<br>
+[TailwindCSS](https://tailwindcss.com/) - スタイリング<br>
+[Shadcn](https://ui.shadcn.com/) - UIコンポーネント<br>
+[TypeScript](https://www.typescriptlang.org/) - 型安全<br>
+[Supabase](https://supabase.com/) - 認証、データベース、ストレージ<br>
+[Upstash](https://upstash.com/) - キャッシュとレート制限<br>
+[React Email](https://react.email/) - メールテンプレート<br>
+[Resend](https://resend.com/) - メール配信<br>
+[i18n](https://next-international.vercel.app/) - 国際化<br>
+[Sentry](https://sentry.io/) - エラーハンドリング/モニタリング<br>
+[Dub](https://dub.sh/) - 共有リンク<br>
+[Trigger.dev](https://trigger.dev/) - バックグラウンドジョブ<br>
+[OpenPanel](https://openpanel.dev/) - アナリティクス<br>
+[Polar](https://polar.sh) - 課金（近日公開）<br>
+[react-safe-action](https://next-safe-action.dev) - 検証済みサーバーアクション<br>
+[nuqs](https://nuqs.47ng.com/) - 型安全な検索パラメータの状態管理<br>
+[next-themes](https://next-themes-example.vercel.app/) - テーマ管理<br>
 
-## Directory Structure
+## ディレクトリ構成
 
 ```
 .
@@ -66,7 +65,7 @@ Everything you need to build a production ready SaaS, it's a opinionated stack b
 └── README.md
 ```
 
-## Prerequisites
+## 必要な環境
 
 Bun<br>
 Docker<br>
@@ -78,21 +77,21 @@ Supabase<br>
 Sentry<br>
 OpenPanel<br>
 
-## Getting Started
+## はじめに
 
-Clone this repo locally with the following command:
+次のコマンドでリポジトリをローカルにクローン
 
 ```bash
 bunx degit midday-ai/v1 v1
 ```
 
-1. Install dependencies using bun:
+1. Bunを使って依存関係をインストール:
 
 ```sh
 bun i
 ```
 
-2. Copy `.env.example` to `.env` and update the variables.
+2. `.env.example` を `.env` にコピーし、環境変数を更新
 
 ```sh
 # Copy .env.example to .env for each app
@@ -101,7 +100,7 @@ cp apps/app/.env.example apps/app/.env
 cp apps/web/.env.example apps/web/.env
 ```
 
-4. Start the development server from either bun or turbo:
+4. Bun または Turbo から開発サーバーを開始:
 
 ```ts
 bun dev // starts everything in development mode (web, app, api, email)
@@ -115,14 +114,15 @@ bun migrate // run migrations
 bun seed // run seed
 ```
 
-## How to use
-This boilerplate is inspired by our work on Midday, and it's designed to serve as a reference for real-world apps. Feel free to dive into the code and see how we've tackled various features. Whether you're looking to understand authentication flows, database interactions, or UI components, you'll find practical, battle-tested implementations throughout the codebase. It's not just a starting point; it's a learning resource that can help you build your own applications.
+## 使い方
 
-With this, you have a great starting point for your own project.
+このボイラープレートは、Middayの開発経験を元に作られており、実際のアプリを作る際に参考にできるように設計されています。例えば、ユーザー認証の流れやデータベースとの連携、UIコンポーネントの使い方など、さまざまな機能を理解するための具体的なコードが含まれています。このコードベースには、現場で使える実践的で信頼性の高い実装が詰まっており、これを利用することで、自分のアプリケーションを効率よく構築するための学びのリソースとして活用できます。これは単なるスタート地点ではなく、プロジェクトを進める上で大いに役立つ内容になっています。
 
-## Deploy to Vercel
+独自のプロジェクトのスタート地点となれば幸いです。
 
-Vercel deployment will guide you through creating a Supabase account and project.
+## Vercelへのデプロイ
+
+Vercelのデプロイでは、Supabaseのアカウントとプロジェクトを作成する手順が記されている。
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmidday-ai%2Fv1&env=RESEND_API_KEY,UPSTASH_REDIS_REST_URL,UPSTASH_REDIS_REST_TOKEN,SENTRY_AUTH_TOKEN,NEXT_PUBLIC_SENTRY_DSN,SENTRY_ORG,SENTRY_PROJECT,DUB_API_KEY,NEXT_PUBLIC_OPENPANEL_CLIENT_ID,OPENPANEL_SECRET_KEY&project-name=create-v1&repository-name=create-v1&redirect-url=https%3A%2F%2Fv1.run&demo-title=Create%20v1&demo-description=An%20open-source%20starter%20kit%20based%20on%20Midday.&demo-url=https%3A%2F%2Fv1.run&demo-image=https%3A%2F%2Fv1.run%2Fopengraph-image.png&integration-ids=oac_VqOgBHqhEoFTPzGkPd7L0iH6)
 
