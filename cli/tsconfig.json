@@ -1,0 +1,15 @@
+{
+  "extends": "@v1/typescript/base.json",
+  "compilerOptions": {
+    "isolatedModules": false,
+    "module": "preserve",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}

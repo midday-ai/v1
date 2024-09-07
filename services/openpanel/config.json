@@ -1,5 +1,5 @@
 {
-  "name": "openpanel",
+  "name": "OpenPanel",
   "envs": {
     "OPENPANEL_API_KEY": {
       "description": "The API key to use for OpenPanel",

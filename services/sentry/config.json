@@ -1,5 +1,5 @@
 {
-  "name": "sentry",
+  "name": "Sentry",
   "envs": {
     "SENTRY_AUTH_TOKEN": {
       "description": "The auth token to use for Sentry",

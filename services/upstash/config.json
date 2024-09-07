@@ -1,5 +1,5 @@
 {
-  "name": "upstash",
+  "name": "Upstash",
   "envs": {
     "UPSTASH_REDIS_REST_URL": {
       "description": "The URL to use for Upstash",

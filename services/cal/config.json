@@ -1,5 +1,5 @@
 {
-  "name": "cal",
+  "name": "Cal.com",
   "generate": {
     "src/example/index.tsx": "apps/web/src/app/talk-to-us/page.tsx"
   }

@@ -1,5 +1,5 @@
 {
-  "name": "dub",
+  "name": "Dub",
   "envs": {
     "DUB_API_KEY": {
       "description": "The API key to use for Dub",

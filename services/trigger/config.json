@@ -1,5 +1,5 @@
 {
-  "name": "trigger",
+  "name": "Trigger.dev",
   "envs": {
     "TRIGGER_API_KEY": {
       "description": "The API key to use for Trigger",
