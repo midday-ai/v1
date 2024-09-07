@@ -1,5 +1,5 @@
 {
-  "name": "@v1/analytics",
+  "name": "@v1/dub",
   "version": "1.0.0",
   "main": "src/index.ts",
   "private": true,
@@ -11,13 +11,6 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@openpanel/nextjs": "^1.0.0",
-    "@v1/logger": "workspace:*",
-    "@vercel/functions": "^1.4.1"
-  },
-  "exports": {
-    "./server": "./src/server.ts",
-    "./client": "./src/client.tsx",
-    "./events": "./src/events.ts"
+    "dub": "^0.36.5"
   }
 }
