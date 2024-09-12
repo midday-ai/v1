@@ -4,7 +4,7 @@
     "enabled": true
   },
   "linter": {
-    "ignore": ["node_modules", ".next", "packages/tsconfig"],
+    "ignore": ["node_modules", ".next", "packages/tsconfig", ".trigger", ".turbo"],
     "enabled": true,
     "rules": {
       "recommended": true,
@@ -20,6 +20,7 @@
     }
   },
   "formatter": {
-    "indentStyle": "space"
+    "indentStyle": "space",
+    "ignore": ["node_modules", ".next", "packages/tsconfig", ".trigger", ".turbo"]
   }
 }
