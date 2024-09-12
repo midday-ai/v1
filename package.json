@@ -13,7 +13,7 @@
     "start:web": "turbo start --filter=@v1/web",
     "start:app": "turbo start --filter=@v1/app",
     "test": "turbo test --parallel",
-    "format": "biome format --write .",
+    "format": "turbo format --parallel",
     "lint": "turbo lint && bun lint:repo",
     "lint:repo": "bunx sherif@latest",
     "lint:repo:fix": "bunx sherif@latest --fix",
