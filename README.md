@@ -68,15 +68,24 @@ Everything you need to build a production ready SaaS, it's a opinionated stack b
 
 ## Prerequisites
 
-Bun<br>
-Docker<br>
-Upstash<br>
-Dub<br>
-Trigger.dev<br>
-Resend<br>
-Supabase<br>
-Sentry<br>
-OpenPanel<br>
+- **[Bun](https://bun.sh)**: A fast JavaScript runtime with built-in tools for bundling, transpiling, and package management, aiming to improve performance and developer experience.
+  
+- **[Docker](https://www.docker.com)**: A platform for developing, shipping, and running applications in isolated containers, ensuring consistency across environments.
+
+- **[Upstash](https://upstash.com)**: A serverless database solution optimized for Redis and Kafka, offering on-demand scaling and a pay-per-request model.
+
+- **[Dub](https://dub.sh)**: A modern URL shortener service that provides fast, customizable links with analytics to track engagement.
+
+- **[Trigger.dev](https://trigger.dev)**: An automation platform that allows you to automate workflows directly in your codebase with pre-built API integrations.
+
+- **[Resend](https://resend.com)**: An API that simplifies sending transactional emails with a focus on speed, deliverability, and modern templates.
+
+- **[Supabase](https://supabase.com)**: An open-source alternative to Firebase, offering real-time APIs, authentication, and a built-in SQL database.
+
+- **[Sentry](https://sentry.io)**: A monitoring tool for tracking and fixing errors in real-time, providing insights into crashes and performance issues.
+
+- **[OpenPanel](https://openpanel.io)**: An open-source user analytics tool for tracking and analyzing user behavior across web and mobile apps.
+
 
 ## Getting Started
 
