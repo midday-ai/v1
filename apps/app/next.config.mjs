@@ -7,6 +7,7 @@ const nextConfig = {
   experimental: {
     instrumentationHook: process.env.NODE_ENV === "production",
   },
+  reactStrictMode: true,
 };
 
 export default withSentryConfig(nextConfig, {
