@@ -10,6 +10,7 @@
     "dev:web": "turbo dev --filter=@v1/web",
     "dev:jobs": "turbo jobs --filter=@v1/jobs",
     "dev:app": "turbo dev --filter=@v1/app",
+    "dev:api": "turbo dev --filter=@v1/api",
     "start:web": "turbo start --filter=@v1/web",
     "start:app": "turbo start --filter=@v1/app",
     "test": "turbo test --parallel",
