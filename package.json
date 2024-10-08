@@ -26,10 +26,5 @@
     "turbo": "2.1.1",
     "typescript": "^5.5.4"
   },
-  "packageManager": "bun@1.1.26",
-  "trustedDependencies": [
-    "@biomejs/biome",
-    "@sentry/cli",
-    "protobufjs"
-  ]
+  "packageManager": "bun@1.1.26"
 }
