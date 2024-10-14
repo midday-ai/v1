@@ -13,7 +13,6 @@
     <a href="#prerequisites"><strong>Prerequisites</strong></a> ·
     <a href="#getting-started"><strong>Getting Started</strong></a> ·
     <a href="#how-to-use"><strong>How to use</strong></a>
-  </p>
 </p>
 
 Everything you need to build a production ready SaaS, it's a opinionated stack based on learnings from building Midday using the latest Next.js framework, it's a monorepo with a focus on code reuse and best practices that will grow with your business.
@@ -103,7 +102,7 @@ cp apps/web/.env.example apps/web/.env
 
 4. Start the development server from either bun or turbo:
 
-```ts
+```sh
 bun dev // starts everything in development mode (web, app, api, email)
 bun dev:web // starts the web app in development mode
 bun dev:app // starts the app in development mode
